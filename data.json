@@ -1,0 +1,37 @@
+﻿[
+  {
+    "id": "zknkgk_1",
+    "word": "伊勢",
+    "reading": "いせ",
+    "source": "増刊下学集",
+    "note": "勢州"
+  },
+  {
+    "id": "zknkgk_2",
+    "word": "伊賀",
+    "reading": "いか",
+    "source": "増刊下学集",
+    "note": "伊州"
+  },
+  {
+    "id": "zknkgk_3",
+    "word": "和泉",
+    "reading": "いつみ",
+    "source": "増刊下学集",
+    "note": "泉州"
+  },
+  {
+    "id": "zknkgk_4",
+    "word": "因幡",
+    "reading": "いなは",
+    "source": "増刊下学集",
+    "note": "因州"
+  },
+  {
+    "id": "zknkgk_5",
+    "word": "出雲",
+    "reading": "いつも",
+    "source": "増刊下学集",
+    "note": "雲州"
+  }
+]
