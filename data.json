@@ -1,0 +1,42 @@
+﻿[
+  {
+    "id": "iks_1",
+    "word": "伊勢",
+    "reading": "いせ",
+    "source": "伊京集",
+    "note": "勢州",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_2",
+    "word": "伊賀",
+    "reading": "いか",
+    "source": "伊京集",
+    "note": "伊州",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_3",
+    "word": "伊豆",
+    "reading": "いづ",
+    "source": "伊京集",
+    "note": "豆州",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_4",
+    "word": "因幡",
+    "reading": "いなば",
+    "source": "伊京集",
+    "note": "因州",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_5",
+    "word": "和泉",
+    "reading": "いづみ",
+    "source": "伊京集",
+    "note": "泉州",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  }
+]
