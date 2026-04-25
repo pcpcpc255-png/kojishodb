@@ -2,20 +2,25 @@
 <html lang="ja">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>古辞書語彙DB</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<h1>古辞書語彙DB</h1>
+<header>
+  <h1>古辞書語彙DB</h1>
+  <div class="search-container">
+    <input id="search" placeholder="漢字・読み・注記・出典で検索...">
+    <label class="option-label">
+      <input type="checkbox" id="ignore-diacritics" checked> 濁点・かなを区別しない
+    </label>
+  </div>
+  <div id="filters"></div>
+  <p id="count">0件</p>
+</header>
 
-<input id="search" placeholder="漢字・読み・注記・出典で検索">
-
-<div id="filters"></div>
-
-<p id="count"></p>
-
-<div id="list"></div>
+<main id="list"></main>
 
 <script src="script.js"></script>
 
