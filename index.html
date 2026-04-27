@@ -10,17 +10,44 @@
 
 <header>
   <h1>古辞書語彙DB</h1>
-  <div class="search-container">
-    <input id="search" placeholder="漢字・読み・注記・出典で検索...">
-    <label class="option-label">
-      <input type="checkbox" id="ignore-diacritics" checked> 濁点・かなを区別しない
-    </label>
+  
+  <div class="search-section">
+    <div class="search-grid">
+      <div class="field">
+        <label for="s-word">漢字</label>
+        <input type="text" id="s-word" placeholder="例：伊勢">
+      </div>
+      <div class="field">
+        <label for="s-reading">読み</label>
+        <input type="text" id="s-reading" placeholder="例：いせ">
+      </div>
+      <div class="field">
+        <label for="s-note">注記</label>
+        <input type="text" id="s-note" placeholder="例：勢州">
+      </div>
+      <div class="field btn-container">
+        <button id="search-btn">検索</button>
+      </div>
+    </div>
+    
+    <div class="search-options">
+      <label class="toggle-control">
+        <input type="checkbox" id="ignore-diacritics" checked>
+        <span class="control-label">濁点・かなを区別しない</span>
+      </label>
+      <div id="count-display">該当件数: <span id="count">0</span> 件</div>
+    </div>
   </div>
-  <div id="filters"></div>
-  <p id="count">0件</p>
+
+  <div class="filter-section">
+    <span class="filter-label">出典フィルタ:</span>
+    <div id="source-filters"></div>
+  </div>
 </header>
 
-<main id="list"></main>
+<main>
+  <div id="list" class="grid-container"></div>
+</main>
 
 <script src="script.js"></script>
 
