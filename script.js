@@ -5,121 +5,119 @@ let currentSource = "";
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
-    // 五十音順ソート
-    data.sort((a, b) => a.reading.localeCompare(b.reading, "ja"));
+    // 読み順にソート（データが空の場合の考慮を追加）
+    data.sort((a, b) => (a.reading || "").localeCompare(b.reading || "", "ja"));
     allData = data;
-    createSourceButtons(data);
-    updateDisplay();
-  });
+    createSourceFilters(data);
+    updateDisplay(); // 初期表示
+  })
+  .catch(err => console.error("データの読み込みに失敗しました:", err));
 
-// 正規化関数（ひらがな化 + 濁点分離・削除）
-const normalizeText = (text) => {
+// 正規化処理（ひらがな化＋濁点除去）
+const normalize = (text) => {
   if (!text) return "";
   return text
-    .replace(/[ァ-ン]/g, (s) => String.fromCharCode(s.charCodeAt(0) - 0x60)) // カタカナ -> ひらがな
-    .normalize("NFD")                                                     // 濁点分離
+    .replace(/[ァ-ン]/g, s => String.fromCharCode(s.charCodeAt(0) - 0x60)) // カタカナをひらがなへ
+    .normalize("NFD")                                                     // 濁点を分解
     .replace(/[\u0300-\u036f]/g, "");                                      // 濁点記号のみ削除
 };
 
-// 出典フィルタボタン
-function createSourceButtons(data) {
-  const container = document.getElementById("filters");
-  container.innerHTML = "";
-
+// 出典ボタンをJSONから作成
+function createSourceFilters(data) {
+  const container = document.getElementById("source-filters");
+  container.innerHTML = ""; // 念のため初期化
   const sources = [...new Set(data.map(d => d.source))];
 
-  const allBtn = document.createElement("button");
-  allBtn.textContent = "すべて";
-  allBtn.className = "active";
-  allBtn.onclick = (e) => {
-    currentSource = "";
-    updateActiveBtn(e.target);
-    updateDisplay();
-  };
-  container.appendChild(allBtn);
-
-  sources.forEach(src => {
+  const createBtn = (text, filterVal) => {
     const btn = document.createElement("button");
-    btn.textContent = src;
-    btn.onclick = (e) => {
-      currentSource = src;
-      updateActiveBtn(e.target);
-      updateDisplay();
+    btn.textContent = text;
+    if (filterVal === currentSource) btn.classList.add("active");
+    btn.onclick = () => {
+      currentSource = filterVal;
+      document.querySelectorAll("#source-filters button").forEach(b => b.classList.remove("active"));
+      btn.classList.add("active");
+      updateDisplay(); // フィルタ切り替え時は即時実行
     };
-    container.appendChild(btn);
-  });
+    return btn;
+  };
+
+  container.appendChild(createBtn("すべて", ""));
+  sources.forEach(s => container.appendChild(createBtn(s, s)));
 }
 
-function updateActiveBtn(target) {
-  document.querySelectorAll("#filters button").forEach(b => b.classList.remove("active"));
-  target.classList.add("active");
-}
-
-// 表示更新
+// 検索実行メインロジック
 function updateDisplay() {
-  const keywordInput = document.getElementById("search").value.trim();
+  const qWord = document.getElementById("s-word").value.trim();
+  const qReading = document.getElementById("s-reading").value.trim();
+  const qNote = document.getElementById("s-note").value.trim();
   const isIgnore = document.getElementById("ignore-diacritics").checked;
 
-  const keyword = isIgnore ? normalizeText(keywordInput) : keywordInput.toLowerCase();
+  const checkMatch = (target, query) => {
+    if (!query) return true;
+    const t = isIgnore ? normalize(target) : (target || "").toLowerCase();
+    const q = isIgnore ? normalize(query) : query.toLowerCase();
+    return t.includes(q);
+  };
 
-  let filtered = allData.filter(item => {
-    const rawText = `${item.word}${item.reading}${item.source}${item.note || ""}`;
-    const target = isIgnore ? normalizeText(rawText) : rawText.toLowerCase();
-    return target.includes(keyword);
+  const filtered = allData.filter(item => {
+    const mWord = checkMatch(item.word, qWord);
+    const mReading = checkMatch(item.reading, qReading);
+    const mNote = checkMatch(item.note || "", qNote);
+    const mSource = !currentSource || item.source === currentSource;
+    return mWord && mReading && mNote && mSource;
   });
 
-  if (currentSource) {
-    filtered = filtered.filter(item => item.source === currentSource);
-  }
-
-  document.getElementById("count").innerHTML = `該当件数: <strong>${filtered.length}</strong> 件`;
-  display(filtered);
+  document.getElementById("count").textContent = filtered.length;
+  render(filtered);
 }
 
-// 同一語でグループ化
-function groupByWord(data) {
-  const groups = {};
-  data.forEach(item => {
-    if (!groups[item.word]) groups[item.word] = [];
-    groups[item.word].push(item);
-  });
-  return groups;
-}
-
-// 表示生成
-function display(data) {
+// 描画処理
+function render(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
 
-  const groups = groupByWord(data);
+  if (data.length === 0) {
+    container.innerHTML = '<div class="no-results">該当するデータが見つかりませんでした。</div>';
+    return;
+  }
+
+  // 語彙ごとにグループ化
+  const groups = data.reduce((acc, item) => {
+    if (!acc[item.word]) acc[item.word] = [];
+    acc[item.word].push(item);
+    return acc;
+  }, {});
 
   Object.keys(groups).forEach(word => {
     const card = document.createElement("div");
     card.className = "card";
-
-    const title = document.createElement("div");
-    title.className = "word";
-    title.textContent = word;
-    card.appendChild(title);
-
-    groups[word].forEach(item => {
-      const entry = document.createElement("div");
-      entry.className = "entry";
-      entry.innerHTML = `
-        <div class="entry-main">
+    
+    let entriesHtml = groups[word].map(item => `
+      <div class="entry">
+        <div class="entry-meta">
           <span class="reading">（${item.reading}）</span>
-          <span class="source">${item.source}</span>
-          ${item.image_url ? `<a href="${item.image_url}" target="_blank" class="link">原本</a>` : ""}
+          <span class="source-tag">${item.source}</span>
+          ${item.image_url ? `<a href="${item.image_url}" target="_blank" class="image-link">原本</a>` : ""}
         </div>
-        <div class="note">${item.note || ""}</div>
-      `;
-      card.appendChild(entry);
-    });
+        <div class="note-text">${item.note || ""}</div>
+      </div>
+    `).join("");
 
+    card.innerHTML = `<div class="word-title">${word}</div>${entriesHtml}`;
     container.appendChild(card);
   });
 }
 
-// イベント
-document.getElementById("search").addEventListener("input", updateDisplay);
+// イベント設定
+// 1. 検索ボタンのクリック
+document.getElementById("search-btn").addEventListener("click", updateDisplay);
+
+// 2. 入力欄でのEnterキー対応
+["s-word", "s-reading", "s-note"].forEach(id => {
+  document.getElementById(id).addEventListener("keypress", (e) => {
+    if (e.key === "Enter") updateDisplay();
+  });
+});
+
+// 3. オプション変更時は即時反映（利便性のため）
 document.getElementById("ignore-diacritics").addEventListener("change", updateDisplay);
