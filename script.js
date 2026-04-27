@@ -1,51 +1,58 @@
 let allData = [];
 let currentSource = "";
+let currentCategory = "";
 
 // データ読み込み
 fetch("data.json")
   .then(res => res.json())
   .then(data => {
-    // 読み順にソート（データが空の場合の考慮を追加）
     data.sort((a, b) => (a.reading || "").localeCompare(b.reading || "", "ja"));
     allData = data;
-    createSourceFilters(data);
-    updateDisplay(); // 初期表示
+    // フィルタボタンの生成
+    createFilters(data, "source", "source-filters");
+    createFilters(data, "category", "category-filters");
+    updateDisplay();
   })
   .catch(err => console.error("データの読み込みに失敗しました:", err));
 
-// 正規化処理（ひらがな化＋濁点除去）
+// 正規化処理
 const normalize = (text) => {
   if (!text) return "";
   return text
-    .replace(/[ァ-ン]/g, s => String.fromCharCode(s.charCodeAt(0) - 0x60)) // カタカナをひらがなへ
-    .normalize("NFD")                                                     // 濁点を分解
-    .replace(/[\u0300-\u036f]/g, "");                                      // 濁点記号のみ削除
+    .replace(/[ァ-ン]/g, s => String.fromCharCode(s.charCodeAt(0) - 0x60))
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "");
 };
 
-// 出典ボタンをJSONから作成
-function createSourceFilters(data) {
-  const container = document.getElementById("source-filters");
-  container.innerHTML = ""; // 念のため初期化
-  const sources = [...new Set(data.map(d => d.source))];
+// フィルタボタンをJSONから動的に作成する汎用関数
+function createFilters(data, key, containerId) {
+  const container = document.getElementById(containerId);
+  container.innerHTML = "";
+  const values = [...new Set(data.map(d => d[key]).filter(v => v))];
 
-  const createBtn = (text, filterVal) => {
+  const createBtn = (text, val) => {
     const btn = document.createElement("button");
     btn.textContent = text;
-    if (filterVal === currentSource) btn.classList.add("active");
+    // 初期状態の「すべて」をアクティブに
+    if (val === "") btn.classList.add("active");
+    
     btn.onclick = () => {
-      currentSource = filterVal;
-      document.querySelectorAll("#source-filters button").forEach(b => b.classList.remove("active"));
+      if (key === "source") currentSource = val;
+      if (key === "category") currentCategory = val;
+      
+      // 同じコンテナ内のボタンのアクティブ状態を切り替え
+      container.querySelectorAll("button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
-      updateDisplay(); // フィルタ切り替え時は即時実行
+      updateDisplay();
     };
     return btn;
   };
 
   container.appendChild(createBtn("すべて", ""));
-  sources.forEach(s => container.appendChild(createBtn(s, s)));
+  values.forEach(v => container.appendChild(createBtn(v, v)));
 }
 
-// 検索実行メインロジック
+// 検索・表示更新
 function updateDisplay() {
   const qWord = document.getElementById("s-word").value.trim();
   const qReading = document.getElementById("s-reading").value.trim();
@@ -64,24 +71,25 @@ function updateDisplay() {
     const mReading = checkMatch(item.reading, qReading);
     const mNote = checkMatch(item.note || "", qNote);
     const mSource = !currentSource || item.source === currentSource;
-    return mWord && mReading && mNote && mSource;
+    const mCategory = !currentCategory || item.category === currentCategory;
+    
+    return mWord && mReading && mNote && mSource && mCategory;
   });
 
   document.getElementById("count").textContent = filtered.length;
   render(filtered);
 }
 
-// 描画処理
+// 描画
 function render(data) {
   const container = document.getElementById("list");
   container.innerHTML = "";
 
   if (data.length === 0) {
-    container.innerHTML = '<div class="no-results">該当するデータが見つかりませんでした。</div>';
+    container.innerHTML = '<div class="no-results">条件に合うデータがありません。</div>';
     return;
   }
 
-  // 語彙ごとにグループ化
   const groups = data.reduce((acc, item) => {
     if (!acc[item.word]) acc[item.word] = [];
     acc[item.word].push(item);
@@ -97,6 +105,7 @@ function render(data) {
         <div class="entry-meta">
           <span class="reading">（${item.reading}）</span>
           <span class="source-tag">${item.source}</span>
+          ${item.category ? `<span class="category-tag">${item.category}</span>` : ""}
           ${item.image_url ? `<a href="${item.image_url}" target="_blank" class="image-link">原本</a>` : ""}
         </div>
         <div class="note-text">${item.note || ""}</div>
@@ -108,16 +117,11 @@ function render(data) {
   });
 }
 
-// イベント設定
-// 1. 検索ボタンのクリック
+// イベントリスナー
 document.getElementById("search-btn").addEventListener("click", updateDisplay);
-
-// 2. 入力欄でのEnterキー対応
 ["s-word", "s-reading", "s-note"].forEach(id => {
   document.getElementById(id).addEventListener("keypress", (e) => {
     if (e.key === "Enter") updateDisplay();
   });
 });
-
-// 3. オプション変更時は即時反映（利便性のため）
 document.getElementById("ignore-diacritics").addEventListener("change", updateDisplay);
