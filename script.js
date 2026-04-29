@@ -1,6 +1,9 @@
 let allData = [];
+let filteredData = []; // 検索・フィルタ後の全データ
 let currentSource = "";
 let currentCategory = "";
+let currentPage = 1;
+const itemsPerPage = 30; // 1ページあたりの件数
 
 // データ読み込み
 fetch("data.json")
@@ -8,14 +11,12 @@ fetch("data.json")
   .then(data => {
     data.sort((a, b) => (a.reading || "").localeCompare(b.reading || "", "ja"));
     allData = data;
-    // フィルタボタンの生成
     createFilters(data, "source", "source-filters");
     createFilters(data, "category", "category-filters");
     updateDisplay();
   })
   .catch(err => console.error("データの読み込みに失敗しました:", err));
 
-// 正規化処理
 const normalize = (text) => {
   if (!text) return "";
   return text
@@ -24,7 +25,6 @@ const normalize = (text) => {
     .replace(/[\u0300-\u036f]/g, "");
 };
 
-// フィルタボタンをJSONから動的に作成する汎用関数
 function createFilters(data, key, containerId) {
   const container = document.getElementById(containerId);
   container.innerHTML = "";
@@ -33,16 +33,14 @@ function createFilters(data, key, containerId) {
   const createBtn = (text, val) => {
     const btn = document.createElement("button");
     btn.textContent = text;
-    // 初期状態の「すべて」をアクティブに
     if (val === "") btn.classList.add("active");
     
     btn.onclick = () => {
       if (key === "source") currentSource = val;
       if (key === "category") currentCategory = val;
-      
-      // 同じコンテナ内のボタンのアクティブ状態を切り替え
       container.querySelectorAll("button").forEach(b => b.classList.remove("active"));
       btn.classList.add("active");
+      currentPage = 1; // フィルタ変更時は1ページ目に戻す
       updateDisplay();
     };
     return btn;
@@ -52,7 +50,6 @@ function createFilters(data, key, containerId) {
   values.forEach(v => container.appendChild(createBtn(v, v)));
 }
 
-// 検索・表示更新
 function updateDisplay() {
   const qWord = document.getElementById("s-word").value.trim();
   const qReading = document.getElementById("s-reading").value.trim();
@@ -66,31 +63,79 @@ function updateDisplay() {
     return t.includes(q);
   };
 
-  const filtered = allData.filter(item => {
+  // 全データから絞り込み
+  filteredData = allData.filter(item => {
     const mWord = checkMatch(item.word, qWord);
     const mReading = checkMatch(item.reading, qReading);
     const mNote = checkMatch(item.note || "", qNote);
     const mSource = !currentSource || item.source === currentSource;
     const mCategory = !currentCategory || item.category === currentCategory;
-    
     return mWord && mReading && mNote && mSource && mCategory;
   });
 
-  document.getElementById("count").textContent = filtered.length;
-  render(filtered);
+  document.getElementById("count").textContent = filteredData.length;
+  
+  // ページネーションと描画の実行
+  renderPagination();
+  renderCurrentPage();
 }
 
-// 描画
-function render(data) {
+// ページネーションUIの生成
+function renderPagination() {
+  const container = document.getElementById("pagination");
+  container.innerHTML = "";
+  const totalPages = Math.ceil(filteredData.length / itemsPerPage);
+  
+  if (totalPages <= 1) return; // 1ページしかない場合は非表示
+
+  const prevBtn = document.createElement("button");
+  prevBtn.textContent = "前へ";
+  prevBtn.className = "pagination-btn";
+  prevBtn.disabled = currentPage === 1;
+  prevBtn.onclick = () => {
+    currentPage--;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    updateUI();
+  };
+  container.appendChild(prevBtn);
+
+  const pageInfo = document.createElement("span");
+  pageInfo.className = "page-info";
+  pageInfo.textContent = `${currentPage} / ${totalPages}`;
+  container.appendChild(pageInfo);
+
+  const nextBtn = document.createElement("button");
+  nextBtn.textContent = "次へ";
+  nextBtn.className = "pagination-btn";
+  nextBtn.disabled = currentPage === totalPages;
+  nextBtn.onclick = () => {
+    currentPage++;
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    updateUI();
+  };
+  container.appendChild(nextBtn);
+}
+
+// ページ番号変更時の描画更新用ヘルパー
+function updateUI() {
+  renderPagination();
+  renderCurrentPage();
+}
+
+function renderCurrentPage() {
   const container = document.getElementById("list");
   container.innerHTML = "";
 
-  if (data.length === 0) {
+  if (filteredData.length === 0) {
     container.innerHTML = '<div class="no-results">条件に合うデータがありません。</div>';
     return;
   }
 
-  const groups = data.reduce((acc, item) => {
+  // 表示範囲の切り出し
+  const startIndex = (currentPage - 1) * itemsPerPage;
+  const pageItems = filteredData.slice(startIndex, startIndex + itemsPerPage);
+
+  const groups = pageItems.reduce((acc, item) => {
     if (!acc[item.word]) acc[item.word] = [];
     acc[item.word].push(item);
     return acc;
@@ -117,11 +162,19 @@ function render(data) {
   });
 }
 
-// イベントリスナー
-document.getElementById("search-btn").addEventListener("click", updateDisplay);
+document.getElementById("search-btn").addEventListener("click", () => {
+  currentPage = 1;
+  updateDisplay();
+});
 ["s-word", "s-reading", "s-note"].forEach(id => {
   document.getElementById(id).addEventListener("keypress", (e) => {
-    if (e.key === "Enter") updateDisplay();
+    if (e.key === "Enter") {
+      currentPage = 1;
+      updateDisplay();
+    }
   });
 });
-document.getElementById("ignore-diacritics").addEventListener("change", updateDisplay);
+document.getElementById("ignore-diacritics").addEventListener("change", () => {
+  currentPage = 1;
+  updateDisplay();
+});
