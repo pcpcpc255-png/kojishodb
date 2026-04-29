@@ -1,3 +1,5 @@
+/* 既存のスタイル ... */
+
 body {
   font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", "Meiryo", sans-serif;
   margin: 0;
@@ -101,7 +103,6 @@ header {
   color: white;
 }
 
-/* カードとタグのスタイル */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -152,5 +153,41 @@ header {
 }
 
 .note-text { font-size: 0.85rem; color: #4a5568; }
-
 .no-results { grid-column: 1/-1; text-align: center; color: #999; padding: 50px; }
+
+/* ページネーション専用のスタイル */
+.pagination-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin: 40px 0;
+  flex-wrap: wrap;
+}
+
+.pagination-btn {
+  background: white;
+  border: 1px solid #007bff;
+  color: #007bff;
+  padding: 8px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.2s;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background: #e7f1ff;
+}
+
+.pagination-btn:disabled {
+  border-color: #ccc;
+  color: #ccc;
+  cursor: not-allowed;
+}
+
+.page-info {
+  font-size: 0.95rem;
+  font-weight: bold;
+  color: #003366;
+}
