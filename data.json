@@ -1,0 +1,1802 @@
+﻿[
+  {
+    "id": "iks_1",
+    "word": "伊勢",
+    "reading": "いせ",
+    "source": "伊京集",
+    "note": "勢刕",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_2",
+    "word": "伊賀",
+    "reading": "いか",
+    "source": "伊京集",
+    "note": "伊州",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_3",
+    "word": "伊豆",
+    "reading": "いづ",
+    "source": "伊京集",
+    "note": "豆州",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_4",
+    "word": "因幡",
+    "reading": "いなば",
+    "source": "伊京集",
+    "note": "因州",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_5",
+    "word": "和泉",
+    "reading": "いづみ",
+    "source": "伊京集",
+    "note": "泉⿱刀⿰冫⿱丿丶",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_6",
+    "word": "出雲",
+    "reading": "いづも",
+    "source": "伊京集",
+    "note": "雲州",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_7",
+    "word": "伊豫",
+    "reading": "いよ",
+    "source": "伊京集",
+    "note": "豫⿱刀⿰冫⿱丿丶",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_8",
+    "word": "石見",
+    "reading": "いはみ",
+    "source": "伊京集",
+    "note": "石刕",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_9",
+    "word": "壹岐",
+    "reading": "いき",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_10",
+    "word": "印度",
+    "reading": "いんど",
+    "source": "伊京集",
+    "note": "天竺",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_11",
+    "word": "一部",
+    "reading": "ゐちのへい",
+    "source": "伊京集",
+    "note": "奥州馬出所也",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_12",
+    "word": "一口淀",
+    "reading": "いもあらひ",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_13",
+    "word": "稲妻",
+    "reading": "いなづま",
+    "source": "伊京集",
+    "note": "倭字欤",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_14",
+    "word": "電",
+    "reading": "いなづま",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_15",
+    "word": "爚",
+    "reading": "いなづま",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_16",
+    "word": "玉垣",
+    "reading": "いがき",
+    "source": "伊京集",
+    "note": "神",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_17",
+    "word": "堰埭",
+    "reading": "ゐせき",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_18",
+    "word": "井磧",
+    "reading": "ゐせき",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_19",
+    "word": "井関",
+    "reading": "ゐせき",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_20",
+    "word": "圍炉裡",
+    "reading": "ゐるり",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_21",
+    "word": "一所懸命地",
+    "reading": "ゐちしよけんめいのち",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_22",
+    "word": "伊奘諾尊",
+    "reading": "いざなきのみこと",
+    "source": "伊京集",
+    "note": "男",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_23",
+    "word": "伊奘冉尊",
+    "reading": "いざなみのみこと",
+    "source": "伊京集",
+    "note": "女。天神第七",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_24",
+    "word": "五十猛命",
+    "reading": "いそたけのみこと",
+    "source": "伊京集",
+    "note": "熊野本宮ノ天神是也。素盞烏ノ御子也",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_25",
+    "word": "妙美井",
+    "reading": "いはしみづ",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_26",
+    "word": "射場",
+    "reading": "いば",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_27",
+    "word": "磴",
+    "reading": "いしばし",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_28",
+    "word": "岩廻",
+    "reading": "いはのはざま",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_29",
+    "word": "岩硲",
+    "reading": "いはのはざま",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_30",
+    "word": "鄽",
+    "reading": "いちくら",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_31",
+    "word": "肆",
+    "reading": "いちくら",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_32",
+    "word": "巓",
+    "reading": "いただき",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_33",
+    "word": "幹",
+    "reading": "ゐげた",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_34",
+    "word": "礎",
+    "reading": "いしずへ",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_35",
+    "word": "磉",
+    "reading": "いしずへ",
+    "source": "伊京集",
+    "note": "二字義同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_36",
+    "word": "楲",
+    "reading": "いい",
+    "source": "伊京集",
+    "note": "堤ノノミ",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_37",
+    "word": "甃",
+    "reading": "いしだたみ",
+    "source": "伊京集",
+    "note": "",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_38",
+    "word": "瑩",
+    "reading": "いしだたみ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "天地",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_39",
+    "word": "夷則",
+    "reading": "ゐそく",
+    "source": "伊京集",
+    "note": "七月異名",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_40",
+    "word": "一紀",
+    "reading": "いつき",
+    "source": "伊京集",
+    "note": "十二年云――",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_41",
+    "word": "朝暮",
+    "reading": "いつも",
+    "source": "伊京集",
+    "note": "",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_42",
+    "word": "早晩",
+    "reading": "いつか",
+    "source": "伊京集",
+    "note": "",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_43",
+    "word": "一亀",
+    "reading": "いつか",
+    "source": "伊京集",
+    "note": "同",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_44",
+    "word": "晩鐘",
+    "reading": "いりあひ",
+    "source": "伊京集",
+    "note": "",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_45",
+    "word": "日没",
+    "reading": "いりあひ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_46",
+    "word": "入逢",
+    "reading": "いりあひ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_47",
+    "word": "居待月",
+    "reading": "ゐまちのつき",
+    "source": "伊京集",
+    "note": "十八日云也",
+    "category": "時節",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_48",
+    "word": "醫師",
+    "reading": "ゐし",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_49",
+    "word": "射手",
+    "reading": "ゐて",
+    "source": "伊京集",
+    "note": "弓",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_50",
+    "word": "𱐍灵",
+    "reading": "いゆうれい",
+    "source": "伊京集",
+    "note": "亡䰟",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_51",
+    "word": "夷中人",
+    "reading": "ゐなかうど",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_52",
+    "word": "為中人",
+    "reading": "ゐなかうど",
+    "source": "伊京集",
+    "note": "同",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_53",
+    "word": "田舎人",
+    "reading": "ゐなかうど",
+    "source": "伊京集",
+    "note": "同",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_54",
+    "word": "従子",
+    "reading": "いとこ",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_55",
+    "word": "従父兄",
+    "reading": "いとこ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/4"
+  },
+  {
+    "id": "iks_56",
+    "word": "再従子",
+    "reading": "いやいとこ",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_57",
+    "word": "三従兄弟",
+    "reading": "またいとこ",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_58",
+    "word": "妹",
+    "reading": "いもうと",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_59",
+    "word": "妹妋",
+    "reading": "いもせ",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_60",
+    "word": "鑄物師",
+    "reading": "いものし",
+    "source": "伊京集",
+    "note": "職人",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_61",
+    "word": "居鷹",
+    "reading": "ゐたか",
+    "source": "伊京集",
+    "note": "虚人",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_62",
+    "word": "一役",
+    "reading": "ゐちやく",
+    "source": "伊京集",
+    "note": "力者",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_63",
+    "word": "一騎當千",
+    "reading": "いつきたうぜん",
+    "source": "伊京集",
+    "note": "兵ヲ云",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_64",
+    "word": "印陀羅",
+    "reading": "いんだら",
+    "source": "伊京集",
+    "note": "画工也。天竺人ト云",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_65",
+    "word": "入鹿大臣",
+    "reading": "いるかのだいじん",
+    "source": "伊京集",
+    "note": "天智天皇時人也。蝦夷（ヱビス）御子",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_66",
+    "word": "市正",
+    "reading": "いちのかみ",
+    "source": "伊京集",
+    "note": "市令",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_67",
+    "word": "維那",
+    "reading": "いの",
+    "source": "伊京集",
+    "note": "",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_68",
+    "word": "衣鉢侍者",
+    "reading": "いふししや",
+    "source": "伊京集",
+    "note": "禅官也",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_69",
+    "word": "已講",
+    "reading": "いかう",
+    "source": "伊京集",
+    "note": "教家官也",
+    "category": "人倫",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_70",
+    "word": "鶺鴒",
+    "reading": "いしくなぎ,せきれい",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_71",
+    "word": "䲽",
+    "reading": "いしたたき",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_72",
+    "word": "蚱蜢",
+    "reading": "いなご",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_73",
+    "word": "江豚",
+    "reading": "いるか",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_74",
+    "word": "鱘",
+    "reading": "いるか",
+    "source": "伊京集",
+    "note": "同",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_75",
+    "word": "𩺮",
+    "reading": "いるか,ろく",
+    "source": "伊京集",
+    "note": "同。",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_76",
+    "word": "烏賊",
+    "reading": "いか,うぞく",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_77",
+    "word": "鯞",
+    "reading": "いか",
+    "source": "伊京集",
+    "note": "同",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_78",
+    "word": "鮼",
+    "reading": "いるか",
+    "source": "伊京集",
+    "note": "七尋切",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_79",
+    "word": "守宮",
+    "reading": "いもり",
+    "source": "伊京集",
+    "note": "本名蜥蜴（セキエキ）",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_80",
+    "word": "鮖",
+    "reading": "いしもち",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_81",
+    "word": "鵙",
+    "reading": "いすか",
+    "source": "伊京集",
+    "note": "觜不合鳥也",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_82",
+    "word": "鵤",
+    "reading": "いかるか",
+    "source": "伊京集",
+    "note": "豆甘鳥也",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_83",
+    "word": "斑鳩",
+    "reading": "いかるか",
+    "source": "伊京集",
+    "note": "同。玉篇曰鶻或鵃作也",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_84",
+    "word": "煎海鼠",
+    "reading": "いりこ",
+    "source": "伊京集",
+    "note": "干肉",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_85",
+    "word": "鼬",
+    "reading": "いたち",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_86",
+    "word": "鰯",
+    "reading": "いはし",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_87",
+    "word": "猪",
+    "reading": "ゐのしし",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_88",
+    "word": "鰻",
+    "reading": "いりこ,まん",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_89",
+    "word": "𩶗",
+    "reading": "いさなこ",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_90",
+    "word": "鰩",
+    "reading": "いくゐ",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_91",
+    "word": "暫生",
+    "reading": "いけふくろ",
+    "source": "伊京集",
+    "note": "鷹名也",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_92",
+    "word": "鷠",
+    "reading": "いたらがひ",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_93",
+    "word": "文蛤",
+    "reading": "いたらがひ",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_94",
+    "word": "桑⿰票虫蛸",
+    "reading": "いはうしり,さうへうせう",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_95",
+    "word": "鴳",
+    "reading": "いひ,いに",
+    "source": "伊京集",
+    "note": "",
+    "category": "畜類",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_96",
+    "word": "銀杏",
+    "reading": "いちやう",
+    "source": "伊京集",
+    "note": "異名鴨脚",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_97",
+    "word": "牛膝",
+    "reading": "いのこづち,ごしつ",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_98",
+    "word": "虎杖",
+    "reading": "いたどり,こぢやう",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_99",
+    "word": "磐梨",
+    "reading": "いはなし",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_100",
+    "word": "伊吹木",
+    "reading": "いぶき",
+    "source": "伊京集",
+    "note": "柏槙",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_101",
+    "word": "一八",
+    "reading": "いちはち",
+    "source": "伊京集",
+    "note": "杜若類也",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_102",
+    "word": "藺",
+    "reading": "ゐ,りん",
+    "source": "伊京集",
+    "note": "織席草也",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_103",
+    "word": "覆盆子",
+    "reading": "いちご,ふくぼんし",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_104",
+    "word": "壁生草",
+    "reading": "いつまでぐさ",
+    "source": "伊京集",
+    "note": "倭歌語也",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_105",
+    "word": "稲",
+    "reading": "いね,たう",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_106",
+    "word": "禾",
+    "reading": "いね,いう",
+    "source": "伊京集",
+    "note": "同",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_107",
+    "word": "秔",
+    "reading": "いね,あう",
+    "source": "伊京集",
+    "note": "同",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_108",
+    "word": "芋",
+    "reading": "いも",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_109",
+    "word": "梂栗",
+    "reading": "いがぐり",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_110",
+    "word": "荇君",
+    "reading": "いも",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_111",
+    "word": "珂孚豆",
+    "reading": "いちご",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_112",
+    "word": "蕀",
+    "reading": "いららか",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_113",
+    "word": "商陸",
+    "reading": "いおすぎ,しょうろく",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_114",
+    "word": "葒草",
+    "reading": "いぬたで",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_115",
+    "word": "地菘",
+    "reading": "いぬのしり",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_116",
+    "word": "鶴虱",
+    "reading": "いぬのしり,くわくしつ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_117",
+    "word": "景天",
+    "reading": "いきくさ",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_118",
+    "word": "𥬃",
+    "reading": "いささ",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_119",
+    "word": "䱐",
+    "reading": "いるか",
+    "source": "伊京集",
+    "note": "",
+    "category": "草木",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_120",
+    "word": "椅子",
+    "reading": "いす",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_121",
+    "word": "衣裳",
+    "reading": "いしやう",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_122",
+    "word": "衣桁",
+    "reading": "いかう",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_123",
+    "word": "位牌",
+    "reading": "ゐはい",
+    "source": "伊京集",
+    "note": "灵",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_124",
+    "word": "硫磺",
+    "reading": "いわう",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_125",
+    "word": "石灰",
+    "reading": "いしばい",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_126",
+    "word": "碇",
+    "reading": "いかり",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_127",
+    "word": "磌",
+    "reading": "いかり",
+    "source": "伊京集",
+    "note": "同",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_128",
+    "word": "㮟",
+    "reading": "いかり",
+    "source": "伊京集",
+    "note": "同",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_129",
+    "word": "𥮘",
+    "reading": "いかりづな",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_130",
+    "word": "印",
+    "reading": "いん,をして",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_131",
+    "word": "印金",
+    "reading": "いんきむ",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_132",
+    "word": "笊籬",
+    "reading": "いかき",
+    "source": "伊京集",
+    "note": "味噌漉也",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_133",
+    "word": "居㞍",
+    "reading": "ゐじり",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_134",
+    "word": "平題箭",
+    "reading": "いたづき",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_135",
+    "word": "犬鞲",
+    "reading": "いぬこて",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_136",
+    "word": "衡頭",
+    "reading": "いぬこて",
+    "source": "伊京集",
+    "note": "同",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_137",
+    "word": "桴",
+    "reading": "いかだ",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_138",
+    "word": "筏",
+    "reading": "いかだ",
+    "source": "伊京集",
+    "note": "同",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_139",
+    "word": "䂎",
+    "reading": "いしづき",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_140",
+    "word": "𩹷作之太刀",
+    "reading": "いかものづくりのたち",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_141",
+    "word": "印篭",
+    "reading": "いんろう",
+    "source": "伊京集",
+    "note": "",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_142",
+    "word": "靭",
+    "reading": "いぎ",
+    "source": "伊京集",
+    "note": "鞍ノ具",
+    "category": "財宝",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_143",
+    "word": "飯",
+    "reading": "いひ",
+    "source": "伊京集",
+    "note": "",
+    "category": "食物",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_144",
+    "word": "𤋎豆",
+    "reading": "いりまめ",
+    "source": "伊京集",
+    "note": "",
+    "category": "食物",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_145",
+    "word": "従子煑",
+    "reading": "いとこに",
+    "source": "伊京集",
+    "note": "大豆小豆汁",
+    "category": "食物",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_146",
+    "word": "豕子",
+    "reading": "ゐのこ",
+    "source": "伊京集",
+    "note": "雜五行𭥜ニ曰豕ノ日食㆑餅令㆓㆑人无レ病㆒一説云豕能多ク生㆑子故ニ女人羨テ㆑之ヲ至㆓十月豕ノ日ニ㆒餅献𬼀㆓仏神ニ㆒祝㆑之也。愚謂ク十月ハ亥ノ月也。故用㆓豕日㆒豕ハ毎年産十二子象㆓十二月ニ㆒也。閏年ハ産㆓十三子ヲ㆒豕猪ニ通",
+    "category": "食物",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_147",
+    "word": "員數",
+    "reading": "いんじゆ",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_148",
+    "word": "一艘",
+    "reading": "いつそう",
+    "source": "伊京集",
+    "note": "舩",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_149",
+    "word": "一疋",
+    "reading": "いつひき",
+    "source": "伊京集",
+    "note": "馬絹",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_150",
+    "word": "一两",
+    "reading": "いちりやう",
+    "source": "伊京集",
+    "note": "薬金",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_151",
+    "word": "一對",
+    "reading": "いつつい",
+    "source": "伊京集",
+    "note": "晝筆",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_152",
+    "word": "一銖",
+    "reading": "いつしゆ",
+    "source": "伊京集",
+    "note": "薬金",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_153",
+    "word": "一端",
+    "reading": "いつたん",
+    "source": "伊京集",
+    "note": "布",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_154",
+    "word": "一緡",
+    "reading": "いちびん",
+    "source": "伊京集",
+    "note": "銭",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_155",
+    "word": "一結",
+    "reading": "いつけつ",
+    "source": "伊京集",
+    "note": "同（銭）",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_156",
+    "word": "一喉",
+    "reading": "いつこん",
+    "source": "伊京集",
+    "note": "𩵋",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_157",
+    "word": "一隻",
+    "reading": "いつせき",
+    "source": "伊京集",
+    "note": "同（魚）",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_158",
+    "word": "一斤",
+    "reading": "いつきん",
+    "source": "伊京集",
+    "note": "二百五十目曰――",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_159",
+    "word": "一叚",
+    "reading": "いつたん",
+    "source": "伊京集",
+    "note": "田",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_160",
+    "word": "一挺",
+    "reading": "いつちやう",
+    "source": "伊京集",
+    "note": "鑓烛",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_161",
+    "word": "一張",
+    "reading": "いつちやう",
+    "source": "伊京集",
+    "note": "弓",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_162",
+    "word": "一献",
+    "reading": "いつこん",
+    "source": "伊京集",
+    "note": "酒",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_163",
+    "word": "一倍",
+    "reading": "いちばい",
+    "source": "伊京集",
+    "note": "増義",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_164",
+    "word": "一䭾",
+    "reading": "いちだ",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_165",
+    "word": "一往",
+    "reading": "いちわう",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_166",
+    "word": "一縮",
+    "reading": "いつしゆく",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_167",
+    "word": "一同",
+    "reading": "いちどう",
+    "source": "伊京集",
+    "note": "天下――",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_168",
+    "word": "一統",
+    "reading": "いつとう",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_169",
+    "word": "一跡",
+    "reading": "いつせき",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_170",
+    "word": "一⿳⺈乛⿰丿小",
+    "reading": "いちえん",
+    "source": "伊京集",
+    "note": "",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_171",
+    "word": "鎰",
+    "reading": "いつ",
+    "source": "伊京集",
+    "note": "二十四両也",
+    "category": "数量",
+    "image_url": "https://dl.ndl.go.jp/pid/2540645/1/5"
+  },
+  {
+    "id": "iks_172",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_173",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_174",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_175",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_176",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_177",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_178",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_179",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_180",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_181",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_182",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_183",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_184",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_185",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_186",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_187",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_188",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_189",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_190",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_191",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_192",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_193",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_194",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_195",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_196",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_197",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_198",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_199",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  },
+  {
+    "id": "iks_200",
+    "word": "",
+    "reading": "",
+    "source": "伊京集",
+    "note": "",
+    "category": "",
+    "image_url": ""
+  }
+]
